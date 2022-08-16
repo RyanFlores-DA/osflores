@@ -1,0 +1,17 @@
+-- Table: public.debitos
+
+-- DROP TABLE IF EXISTS public.debitos;
+
+CREATE TABLE IF NOT EXISTS public.debitos
+(
+    deb_id integer NOT NULL DEFAULT nextval('debitos_deb_id_seq'::regclass),
+    dim_mes integer,
+    ano integer,
+    valor integer,
+    CONSTRAINT debitos_pkey PRIMARY KEY (deb_id)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.debitos
+    OWNER to ryan;

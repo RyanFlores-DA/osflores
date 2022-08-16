@@ -17,8 +17,7 @@ app.get('/', (request, response) => {
     response.json({ info: 'Node.js, Express, and Postgres API' })
 })
 
-app.get('/chat', db.getChats);
-app.get('/chat/:id', db.getChatById);
+
 app.get('/chart/:id', db.getChartById);
 
 app.listen(port, () => {
