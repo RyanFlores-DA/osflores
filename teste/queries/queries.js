@@ -2,20 +2,18 @@ const { response } = require('express')
 
 const Pool = require('pg').Pool
 const pool = new Pool({
-    user: 'ryan',
-    host: 'localhost',
-    database: 'testes',
-    password: '123',
+    user: 'ydiyghfkmzredl',
+    host: 'ec2-44-205-41-76.compute-1.amazonaws.com',
+    database: 'd9chpetiioi5k7',
+    password: '87d4bf164b7176209b36cd893712fd3a6b72f675887fe18394816132a214c407',
     port: 5432,
 })
 
-
+var connectDb = "postgres://ydiyghfkmzredl:87d4bf164b7176209b36cd893712fd3a6b72f675887fe18394816132a214c407@ec2-44-205-41-76.compute-1.amazonaws.com:5432/d9chpetiioi5k7"
+var arrayDados = [];
 const getChartById = (request, response) => {
-    const id = parseInt(request.params.id)
-
-    pool.query('SELECT salario FROM chart WHERE id = $1', [id], (error, results) => {
-        //chat1 = results.rows[0]['salario'];
-        //console.log(results.rows[0]['dim_mes'])
+    //const id = parseInt(request.params.id)
+    pool.query('SELECT c.salario, d.mes, g.valor FROM chart c  inner join dim_mes d on (d.mes_id = c.dim_mes) inner join debitos g on (g.dim_mes = d.mes_id)',(error, results) => {
         if (error) {
             throw error
         }
@@ -25,6 +23,6 @@ const getChartById = (request, response) => {
 }
 
 module.exports = {
-    getChartById
-
+    arrayDados,
+    getChartById,
 }

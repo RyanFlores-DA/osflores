@@ -4,7 +4,7 @@
 
 CREATE TABLE IF NOT EXISTS public.debitos
 (
-    deb_id integer NOT NULL DEFAULT nextval('debitos_deb_id_seq'::regclass),
+    deb_id SERIAL NOT NULL,
     dim_mes integer,
     ano integer,
     valor integer,
@@ -12,6 +12,3 @@ CREATE TABLE IF NOT EXISTS public.debitos
 )
 
 TABLESPACE pg_default;
-
-ALTER TABLE IF EXISTS public.debitos
-    OWNER to ryan;

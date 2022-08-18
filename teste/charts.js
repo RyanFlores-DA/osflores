@@ -1,31 +1,67 @@
 //Configurações e leitura de API
-var numero = 0;
-axios.get('http://localhost:3000/chart/1')
+var vals = 0;
+var mes = '';
+var arrayDados = [];
+var arrayMes = [];
+var arrayDebitos = [];
+axios.get('http://localhost:4000/chart/')
     .then(response => criaListaDinamica(response.data))
     .catch(error => console.log(error))
-const criaListaDinamica = (alunos) => {
-    alunos.map(num => {
-        numero = num.numum;
-        console.log('All be function');
+const criaListaDinamica = (dados) => {
+    dados.map(x => {
+        arrayDados.push(x.salario)
+        arrayMes.push(x.mes)
+        arrayDebitos.push(x.valor)
+        console.log('All be function 2');
     })
 }
 
-// PieChart
 google.charts.load('current', { packages: ['corechart'] });
 google.charts.setOnLoadCallback(drawChart);
+      
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChartArea);
 
-function drawChart() {
-    // Define the chart to be drawn.
-    var data = new google.visualization.DataTable();
-    data.addColumn('string', 'Element');
-    data.addColumn('number', 'Percentage');
-    data.addRows([
-        ['Nitrogen', numero],
-        ['Oxygen', 10],
-        ['Other', 10]
-    ]);
+      function drawChartArea() {
 
-    // Instantiate and draw the chart.
-    var chart = new google.visualization.PieChart(document.getElementById('myPieChart'));
-    chart.draw(data, null);
-}
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Element');
+        data.addColumn('number', 'Salário');
+        data.addColumn('number', 'Gastos');
+        for(i=0; i<arrayDados.length; i++){
+          data.addRows([
+              [arrayMes[i], arrayDados[i], arrayDebitos[i]],
+          ]);
+        }
+        var options = {
+          title: 'Salário x Gastos',
+          hAxis: {title: 'Mês',  titleTextStyle: {color: '#333'}},
+          vAxis: {title: 'Salário',  titleTextStyle: {color: '#333'} ,minValue: 0},
+          legend: {position: 'top'}
+        };
+
+        var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+
+
+      function drawChart() {
+        // Define the chart to be drawn.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Element');
+        data.addColumn('number', 'Percentage');
+        for(i=0; i<arrayDados.length; i++){
+            data.addRows([
+                [arrayMes[i], arrayDados[i]],
+            ]);
+        }
+
+        var options = {
+            title: 'Porcentágem do salário',
+            is3D: true
+          };
+    
+        // Instantiate and draw the chart.
+        var chart = new google.visualization.PieChart(document.getElementById('myPieChart'));
+        chart.draw(data, options);
+    }
