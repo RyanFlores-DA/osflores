@@ -581,10 +581,8 @@
       const criaListaDinamica = (dados) => {
         dados.map(x => {
           arrayDados.push(x.salario)
-          arrayDados2.push(x.salario)
           arrayMes.push(x.mes)
           arrayDebitos.push(x.valor)
-          arrayDebitos2.push(x.valor)
           console.log('All be function');
           let stt = 0;
           let sTotal = 0;
@@ -611,29 +609,18 @@
           salarTotalDebitosX.innerHTML = sTotal + ' x ' + sTotalDebs;
         })
       }
-      // axios.get('http://covidapidiogenes.herokuapp.com/priori/')
-      //   .then(response => criaLista(response.data))
-      //   .catch(error => console.log(error))
-      // const criaLista = (dados) => {
-      //   dados.map(x => {
-      //     var id = document.getElementById('id');
-      //     var desc = document.getElementById('desc');
-      //     var ano = document.getElementById('ano');
-      //     var mes = document.getElementById('mes');
-      //     var valor = document.getElementById('valor');
-      //     var tab = document.getElementById("corpo")
-      //     //tab.appendChild("td")
-      //     for (i = 0; i < 5; i++) {
-      //       id.innerHTML = x.id;
-      //       desc.innerHTML = x.priori;
-      //       ano.innerHTML = x.ano;
-      //       mes.innerHTML = x.mes;
-      //       valor.innerHTML = x.valor;
-      //     }
-      //   })
-      // }
-      let s = document.getElementById("tSalario");
-      var d = document.getElementById("tDebitos");
+      axios.get('https://http://covidapidiogenes.herokuapp.com/sadeb/')
+        .then(response => criaLista(response.data))
+        .catch(error => console.log(error))
+      const criaLista = (dados) => {
+        dados.map(x => {
+
+          //tab.appendChild("td")
+          for (i = 0; i < 5; i++) {
+
+          }
+        })
+      }
       console.log(arrayDados, arrayMes)
       console.log(Date.now());
 
