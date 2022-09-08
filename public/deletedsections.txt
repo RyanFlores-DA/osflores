@@ -1,0 +1,104 @@
+<!-- GALERIA DA FAMÍLIA-->
+<section class="gallery gallery2 cid-tedtjDQZW0" id="gallery2-14">
+    
+    
+    <div class="container">
+        <div class="title mbr-pb-4 align-center">
+            <h3 class="mbr-section-title mbr-bold mbr-fonts-style display-2">Galeria da família<br></h3>
+            
+        </div>
+        <div class="mbr-row mbr-px-2 gallery-wrap mbr-jc-c">
+            <div class="mbr-col-md-12 mbr-col-sm-12 gallery-row row-first flex-wrap mbr-col-lg-12 mbr-pb-4 mbr-flex">
+                
+            <div class="gallery-item mbr-col-sm-12 mbr-col-lg-4 mbr-col-md-8 md-pb mbr-px-2">
+                    <div class="gallery-img-wrap"><!-- IMG GALERIA-->
+                        <amp-img on="tap:lightbox1" role="button" tabindex="0" class="placeholder-loader image-without-link" src="https://app.8b.io/app/themes/webamp/components/_images/background1.jpg" layout="responsive" height="225" width="337.5" alt="">
+                            <div placeholder="" class="placeholder">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+                                    <circle class="big" fill="none" stroke="#c2e0e0" stroke-width="3" stroke-dasharray="230" stroke-dashoffset="230" cx="150" cy="150" r="145"></circle>
+                                    <circle class="small" fill="none" stroke="#c2e0e0" stroke-width="3" stroke-dasharray="212" cx="150" cy="150" r="135"></circle>
+                                </svg></div>
+                            
+                        </amp-img>
+                        
+                        
+                    </div>
+                </div><div class="gallery-item mbr-col-sm-12 mbr-col-lg-4 mbr-col-md-8 md-pb mbr-px-2">
+                    <div class="gallery-img-wrap"><!-- IMG GALERIA-->
+                        <amp-img on="tap:lightbox1" role="button" tabindex="0" class="placeholder-loader image-without-link" src="https://app.8b.io/app/themes/webamp/components/_images/background1.jpg" layout="responsive" height="225" width="337.5" alt="">
+                            <div placeholder="" class="placeholder">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+                                    <circle class="big" fill="none" stroke="#c2e0e0" stroke-width="3" stroke-dasharray="230" stroke-dashoffset="230" cx="150" cy="150" r="145"></circle>
+                                    <circle class="small" fill="none" stroke="#c2e0e0" stroke-width="3" stroke-dasharray="212" cx="150" cy="150" r="135"></circle>
+                                </svg></div>
+                            
+                        </amp-img>
+                        
+                        
+                    </div>
+                </div><div class="gallery-item mbr-col-sm-12 mbr-col-lg-4 mbr-col-md-8 md-pb mbr-px-2">
+                    <div class="gallery-img-wrap"><!-- IMG GALERIA-->
+                        <amp-img on="tap:lightbox1" role="button" tabindex="0" class="placeholder-loader image-without-link" src="https://app.8b.io/app/themes/webamp/components/_images/background1.jpg" layout="responsive" height="225" width="337.5" alt="">
+                            <div placeholder="" class="placeholder">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+                                    <circle class="big" fill="none" stroke="#c2e0e0" stroke-width="3" stroke-dasharray="230" stroke-dashoffset="230" cx="150" cy="150" r="145"></circle>
+                                    <circle class="small" fill="none" stroke="#c2e0e0" stroke-width="3" stroke-dasharray="212" cx="150" cy="150" r="135"></circle>
+                                </svg></div>
+                            
+                        </amp-img>
+                        
+                        
+                    </div>
+                </div></div>
+            <div class="mbr-col-md-12 mbr-col-sm-12 gallery-row row-second flex-wrap mbr-col-lg-12 mbr-pb-4 mbr-flex">
+                
+            <div class="gallery-item mbr-col-sm-12 mbr-col-lg-4 mbr-col-md-8 md-pb mbr-px-2">
+                    <div class="gallery-img-wrap"><!-- IMG GALERIA-->
+                        <amp-img on="tap:lightbox1" role="button" tabindex="0" class="placeholder-loader image-without-link" src="https://app.8b.io/app/themes/webamp/components/_images/background1.jpg" layout="responsive" height="225" width="337.5" alt="">
+                            <div placeholder="" class="placeholder">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+                                    <circle class="big" fill="none" stroke="#c2e0e0" stroke-width="3" stroke-dasharray="230" stroke-dashoffset="230" cx="150" cy="150" r="145"></circle>
+                                    <circle class="small" fill="none" stroke="#c2e0e0" stroke-width="3" stroke-dasharray="212" cx="150" cy="150" r="135"></circle>
+                                </svg></div>
+                            
+                        </amp-img>
+                        
+                        
+                    </div>
+                </div><div class="gallery-item mbr-col-sm-12 mbr-col-lg-4 mbr-col-md-8 md-pb mbr-px-2">
+                    <div class="gallery-img-wrap"><!-- IMG GALERIA-->
+                        <amp-img on="tap:lightbox1" role="button" tabindex="0" class="placeholder-loader image-without-link" src="https://app.8b.io/app/themes/webamp/components/_images/background1.jpg" layout="responsive" height="225" width="337.5" alt="">
+                            <div placeholder="" class="placeholder">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+                                    <circle class="big" fill="none" stroke="#c2e0e0" stroke-width="3" stroke-dasharray="230" stroke-dashoffset="230" cx="150" cy="150" r="145"></circle>
+                                    <circle class="small" fill="none" stroke="#c2e0e0" stroke-width="3" stroke-dasharray="212" cx="150" cy="150" r="135"></circle>
+                                </svg></div>
+                            
+                        </amp-img>
+                        
+                        
+                    </div>
+                </div><div class="gallery-item mbr-col-sm-12 mbr-col-lg-4 mbr-col-md-8 md-pb mbr-px-2">
+                    <div class="gallery-img-wrap"><!-- IMG GALERIA-->
+                        <amp-img on="tap:lightbox1" role="button" tabindex="0" class="placeholder-loader image-without-link" src="https://app.8b.io/app/themes/webamp/components/_images/background1.jpg" layout="responsive" height="225" width="337.5" alt="">
+                            <div placeholder="" class="placeholder">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+                                    <circle class="big" fill="none" stroke="#c2e0e0" stroke-width="3" stroke-dasharray="230" stroke-dashoffset="230" cx="150" cy="150" r="145"></circle>
+                                    <circle class="small" fill="none" stroke="#c2e0e0" stroke-width="3" stroke-dasharray="212" cx="150" cy="150" r="135"></circle>
+                                </svg></div>
+                            
+                        </amp-img>
+                        
+                        
+                    </div>
+                </div></div>
+            
+            
+        </div>
+    </div>
+    <amp-image-lightbox id="lightbox1" layout="nodisplay">
+        <a class="control" data-close-button-aria-label="Close">
+            <span class="close"></span>
+        </a>
+    </amp-image-lightbox>
+</section>

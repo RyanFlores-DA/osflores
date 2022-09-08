@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+    <script src="../assets/demo/apiPrio.js"></script>    
+    <title>Document</title>
+</head>
+<body>
+    <div class="col-md-12">
+        <div class="card  card-plain">
+          <div class="card-header">
+            <h4 class="card-title"> Plano de gastos</h4>
+            <p class="category"> Lista de prioridades</p>
+            <p class="category" id="teste"> </p>
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <div id="tabela5"></div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <div id="tabela2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+        setInterval(dadosApi(), 8000);
+    </script>
+</body>
+</html>
