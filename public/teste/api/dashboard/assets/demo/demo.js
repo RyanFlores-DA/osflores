@@ -395,7 +395,7 @@ demo = {
     gradientStroke.addColorStop(0, 'rgba(66,134,121,0)'); //green colors
 
     var data = {
-      labels: ['JUL', 'AUG', 'SEP', 'OCT', 'NOV'],
+      labels: [],
       datasets: [{
         label: "My First dataset",
         fill: false,
@@ -411,7 +411,7 @@ demo = {
         pointHoverRadius: 4,
         pointHoverBorderWidth: 90,
         pointRadius: 20,
-        data: [90, 27, 60, 12, 80],
+        data: [90, 100],
       }]
     };
 
