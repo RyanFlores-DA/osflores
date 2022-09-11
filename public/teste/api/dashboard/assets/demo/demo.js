@@ -393,12 +393,12 @@ demo = {
     gradientStroke.addColorStop(1, 'rgba(66,134,121,0.15)');
     gradientStroke.addColorStop(0.4, 'rgba(66,134,121,0.0)'); //green colors
     gradientStroke.addColorStop(0, 'rgba(66,134,121,0)'); //green colors
-
+    console.log(ssalar, 'dentro da demo', sdebs);
     var data = {
-      labels: [],
+      labels: ['Salário Ac', 'Débitos'],
       datasets: [{
-        label: "My First dataset",
-        fill: false,
+        label: "Débitos x Salário",
+        fill: true,
         backgroundColor: gradientStroke,
         borderColor: '#00d6b4',
         borderWidth: 2,
@@ -411,7 +411,7 @@ demo = {
         pointHoverRadius: 4,
         pointHoverBorderWidth: 90,
         pointRadius: 20,
-        data: [90, 100],
+        data: [ssalar, sdebs],
       }]
     };
 
