@@ -575,7 +575,7 @@
       var arrayDebitos = [];
       var arrayDebitos2 = [];
       console.log('entrou aqui')
-      axios.get('http://covidapidiogenes.herokuapp.com/chart/')
+      axios.get('http://covidapidiogenes.herokuapp.com/salario/')
         .then(response => criaListaDinamica(response.data))
         .catch(error => console.log(error))
       const criaListaDinamica = (dados) => {
