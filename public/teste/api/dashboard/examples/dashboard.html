@@ -603,9 +603,9 @@
       var ssalar = [];
       var sdebs = [];
       axios.get('https:covidapidiogenes.herokuapp.com/sadeb/')
-        .then(response => criaLista(response.data))
+        .then(response2 => criaLista(response2.data))
         .catch(error => console.log(error))
-      const criaLista = (dados) => {
+        const criaLista = (dados) => {
         dados.map(x => {
           ssalar.push(x.ssalario);
           sdebs.push(x.svalor);
