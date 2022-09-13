@@ -251,7 +251,7 @@
 
             <div class="card card-chart">
               <div class="card-header">
-                <h5 class="card-category">Salário X Débtos</h5>
+                <h5 class="card-category" id="hiddenDiv2" style="display: none;">Salário X Débtos</h5>
                 <h3 class="card-title" id="tDebitosX"></h3>
               </div>
               <div class="card-body">
@@ -483,6 +483,7 @@
         <script type="text/javascript" DEFER="DEFER">
           function sad() {
             document.getElementById("hiddenDiv").style.display = "block";
+            document.getElementById("hiddenDiv2").style.display = "block";
           }
           setInterval(sad, 1000);
         </script>
